@@ -7,6 +7,7 @@ Ship_Segmentation/DATASET/
 
 # Ignore YOLOv8 runs folder
 Ship_Classification/YOLOv8/runs/
+Ship_Segmentation/runs/
 
 # Ignore model and checkpoint files
 *.keras
