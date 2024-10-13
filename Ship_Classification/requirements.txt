@@ -1,0 +1,17 @@
+# yoloV8
+pandas
+ultralytics
+streamlit
+
+# SSD
+numpy
+tensorflow
+keras
+
+#FastRCNN
+scikit-learn
+opencv-python
+
+#Dataset Preprocessing
+labelme
+labelme2yolo

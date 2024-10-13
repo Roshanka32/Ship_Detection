@@ -1,0 +1,13 @@
+# Ignore virtual environment
+venv/
+
+# Ignore dataset folders
+Ship_Classification/DATASET/
+Ship_Segmentation/DATASET/
+
+# Ignore YOLOv8 runs folder
+Ship_Classification/YOLOv8/runs/
+
+# Ignore model and checkpoint files
+*.keras
+*.pt
