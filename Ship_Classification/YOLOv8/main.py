@@ -4,8 +4,7 @@ from PIL import Image as im
 from io import BytesIO
 
 # load best model weights
-model = YOLO("D:/ACADEMIC/SEMESTER TWO/DESERTATION/Ship_Detection_Model/Ship_Classification/YOLOv8/runs/classify/train2/weights/last.pt")  
-
+model = YOLO("D:/ACADEMIC/SEMESTER TWO/DESERTATION/Ship_Detection_Model/Ship_Segmentation/runs/segment/train2/weights/best.pt")  
 
 # generate UI using streamlit
 

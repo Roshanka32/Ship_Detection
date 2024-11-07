@@ -4,11 +4,13 @@ venv/
 # Ignore dataset folders
 Ship_Classification/DATASET/
 Ship_Segmentation/DATASET/
+Ship_Segmentation/Yolov8/Dataset
 
 # Ignore YOLOv8 runs folder
 Ship_Classification/YOLOv8/runs/
-Ship_Segmentation/runs/
+Ship_Segmentation/Yolov8/runs
 
 # Ignore model and checkpoint files
 *.keras
 *.pt
+*.pth
