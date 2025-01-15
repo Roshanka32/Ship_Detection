@@ -5,14 +5,17 @@ import numpy as np
 from io import BytesIO
 
 # Load best model weights
-model = YOLO("D:/04_Personal_Files/Python/Ship_Detection_Model/Ship_Segmentation/runs/segment/train9/weights/best.pt")
+new_model = YOLO(r"D:\ACADEMIC\SEMESTER TWO\DESERTATION\Ship_Detection_Model\Ship_Segmentation\Yolov8\results\Trained_Results\weights\best.pt")  
+
 
 # Generate UI using Streamlit
 st.markdown("<h1 style='text-align: center;'>Ship Segmentation using Yolov8</h1>", unsafe_allow_html=True)
 
 img = st.file_uploader("Upload Image", type=["jpg", "png", "jpeg"])
 
-if img:
+
+if img is not None:
+    
     # Open the uploaded image
     image = im.open(img)
     
@@ -21,15 +24,15 @@ if img:
         image = image.convert('RGB')
     
     # Set image height and width
-    image = image.resize((640, 640))
+    image = image.resize((800, 800))
 
     # Convert image to bytes
     img_bytes = BytesIO()
     image.save(img_bytes, format='jpeg')
     img_bytes.seek(0)
-    
+
     # Get model prediction
-    results = model(image)
+    results = new_model.predict(image, conf = 0.2)
 
     # Get the segmented result image with labels and bounding boxes
     result_image = results[0].plot(labels=True, boxes=True)  

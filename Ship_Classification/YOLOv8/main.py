@@ -4,8 +4,7 @@ from PIL import Image as im
 from io import BytesIO
 
 # load best model weights
-model = YOLO("D:/ACADEMIC/SEMESTER TWO/DESERTATION/Ship_Detection_Model/Ship_Segmentation/runs/segment/train2/weights/best.pt")  
-
+model = YOLO(r"D:\ACADEMIC\SEMESTER TWO\DESERTATION\Ship_Detection_Model\Ship_Classification\YOLOv8\runs\classify\train2\weights\best.pt")
 # generate UI using streamlit
 
 st.markdown("<h1 style='text-align: center;'>Ship Detection using Yolov8</h1>", unsafe_allow_html=True)
